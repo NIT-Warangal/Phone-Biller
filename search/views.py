@@ -16,7 +16,9 @@ def search(request):
 		if key_id != '':
 			employees = employees.filter(emp_id__contains=key_id)
 
-	employees = employees.order_by('emp_id')[:100]
+		employees = employees.order_by('emp_id')[:100]
 
-	context = {'employees' : employees}
-	return render(request,'search/index.html', context)
+		context = {'employees' : employees}
+		return render(request,'search/index.html', context)
+	else:
+		return render(request, 'search/index.html',{})
