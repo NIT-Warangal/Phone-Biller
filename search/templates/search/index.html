@@ -9,12 +9,12 @@
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
     <title>NIT-W Phone Bill Viewing System</title>
-
+    {% load staticfiles %}
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/signin.css" rel="stylesheet">
+    <link href="{% static "css/signin.css" %}" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -33,7 +33,7 @@
       <form class="form-signin" role="form" action="" method="post">
       	{% csrf_token %}
         <h2 class="form-signin-heading" style="text-align: center;">NITW Employee Phone Bill Portal</h2>
-        <img src="logo_nitw.png" class="img-rounded" style="display: block; margin-left: auto; margin-right: auto;"></br>
+        <img src="{% static "logo_nitw.png" %}" class="img-rounded" style="display: block; margin-left: auto; margin-right: auto;"></br>
         <input type="text" class="form-control" name='key_id' id='key_id'placeholder="Employee ID" required autofocus></br>
         <button class="btn btn-lg btn-primary btn-block" type="submit" name='Submit!'>View Bill</button>
       </form>
