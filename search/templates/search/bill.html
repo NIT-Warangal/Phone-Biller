@@ -35,14 +35,14 @@
         <hr>
         {% if employees %}
           {% for employee in employees %}
-        <p><strong>Employee ID : </strong></p><p id="eid">{{ employee.emp_id }}<p>
-        <p><strong>Employee Name : </strong></p><p id="ename">{{ employee.emp_name }}<p>
-        <p><strong>Employee Phone No : </strong></p><p id="ephone">{{ employee.emp_phone }}<p>
-        <p><strong>Employee Email : </strong></p><p id="eemail">{{ employee.emp_email }}<p>
-        <p><strong>Employee Bill : </strong></p><p id="ebill">{{ employee.emp_bill }}<p>
+        <p><strong>Employee ID : </strong> {{ employee.emp_id }}</p>
+        <p><strong>Employee Name : </strong>{{ employee.emp_name }}</p>
+        <p><strong>Employee Phone No : </strong>{{ employee.emp_phone }}</p>
+        <p><strong>Employee Email : </strong>{{ employee.emp_email }}</p>
+        <p><strong>Employee Bill : </strong>{{ employee.emp_bill }}</p>
           {% endfor %}
         {% else %}
-          <p>Please Enter a valid Search</p>
+          <p style="text-align:center;"><strong>Please Enter a valid Search</strong></p>
         {% endif %}
         <button class="btn btn-lg btn-primary btn-block" href="index.html">View Another Bill</button>
       </form>
