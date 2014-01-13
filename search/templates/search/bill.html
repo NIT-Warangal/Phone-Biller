@@ -37,9 +37,9 @@
           {% for employee in employees %}
         <p><strong>Employee ID : </strong></p><p id="eid">{{ employee.emp_id }}<p>
         <p><strong>Employee Name : </strong></p><p id="ename">{{ employee.emp_name }}<p>
-        <p><strong>Employee Phone No : </strong></p><p id="ephone">{{ employee.phone }}<p>
-        <p><strong>Employee Email : </strong></p><p id="eemail">{{ employee.email }}<p>
-        <p><strong>Employee Bill : </strong></p><p id="ebill">{{ employee.bill }}<p>
+        <p><strong>Employee Phone No : </strong></p><p id="ephone">{{ employee.emp_phone }}<p>
+        <p><strong>Employee Email : </strong></p><p id="eemail">{{ employee.emp_email }}<p>
+        <p><strong>Employee Bill : </strong></p><p id="ebill">{{ employee.emp_bill }}<p>
           {% endfor %}
         {% else %}
           <p>Please Enter a valid Search</p>
