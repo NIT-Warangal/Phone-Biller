@@ -11,7 +11,7 @@ def search(request):
 	employees = EmployeeDetails.objects.all()
 
 	if request.method == 'POST':
-		key_id = request.POST['id']
+		key_id = request.POST['key_id']
 
 		if key_id != '':
 			employees = employees.filter(emp_id__contains=key_id)
