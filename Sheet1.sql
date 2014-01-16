@@ -1,0 +1,1 @@
+insert into TABLE_NAME(col1, col2, col3) values("1.0", "AA", "12.6");insert into TABLE_NAME(col1, col2, col3) values("2.0", "BB", "12.9");
