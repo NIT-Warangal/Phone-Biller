@@ -37,9 +37,16 @@
           {% for employee in employees %}
         <p><strong>Employee ID : </strong> {{ employee.emp_id }}</p>
         <p><strong>Employee Name : </strong>{{ employee.emp_name }}</p>
-        <p><strong>Employee Phone No : </strong>{{ employee.emp_phone }}</p>
+        <p><strong>Employee CUG 99 : </strong>{{ employee.emp_phone }}</p>
+        <p><strong>Employee CUG official : </strong>{{ employee.emp_phoneofficial }}</p>
+        <p><strong>Intercom Number : </strong>{{ employee.emp_intercom }}</p>
+
         <p><strong>Employee Email : </strong>{{ employee.emp_email }}</p>
-        <p><strong>Employee Bill : </strong>{{ employee.emp_bill }}</p>
+        <p><strong>Employee CUG99 Bill : </strong>{{ employee.emp_bill }}</p>
+        <p><strong>Employee CUG Official Bill : </strong>{{ employee.emp_phonebillofficial }}</p>
+        <p><strong>Employee intercom bill : </strong> {{ employee.emp_intercombill }}</p>
+        <hr>
+        <p><strong>Total Bill : </strong>{{ employee.emp_total }}</p>
           {% endfor %}
         {% else %}
           <p style="text-align:center;" class="text-danger"><strong>Please Enter a valid Search</strong></p>
